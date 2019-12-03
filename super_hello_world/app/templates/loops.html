@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if title == "whoa" %}
+    {{title}}
+    {% else %}
+    something else
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+<ul>
+    {% for car in cars %}
+        <li>{{car}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
